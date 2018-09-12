@@ -14,6 +14,7 @@
 		B205434C21431C4600995F66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B205434A21431C4600995F66 /* LaunchScreen.storyboard */; };
 		B20543542143274A00995F66 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20543532143274A00995F66 /* QuestionViewController.swift */; };
 		B20543562143276100995F66 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20543552143276100995F66 /* ResultViewController.swift */; };
+		B231EF0D2146DEBE00B9FB5C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231EF0C2146DEBE00B9FB5C /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		B205434821431C4600995F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B205434B21431C4600995F66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B205434D21431C4600995F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B20543532143274A00995F66 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B20543532143274A00995F66 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		B20543552143276100995F66 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B231EF0C2146DEBE00B9FB5C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		B205434021431C4400995F66 /* myQuestionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				B296FC7A2149C77E0054829E /* data */,
+				B296FC792149C7500054829E /* Controller */,
+				B296FC772149C7250054829E /* Model */,
+				B296FC782149C7310054829E /* View */,
+				B205434821431C4600995F66 /* Assets.xcassets */,
+				B205434D21431C4600995F66 /* Info.plist */,
+			);
+			path = myQuestionnaire;
+			sourceTree = "<group>";
+		};
+		B296FC772149C7250054829E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B231EF0C2146DEBE00B9FB5C /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B296FC782149C7310054829E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B205434521431C4400995F66 /* Main.storyboard */,
+				B205434A21431C4600995F66 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B296FC792149C7500054829E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				B205434121431C4400995F66 /* AppDelegate.swift */,
 				B205434321431C4400995F66 /* IntroductionViewController.swift */,
 				B20543532143274A00995F66 /* QuestionViewController.swift */,
 				B20543552143276100995F66 /* ResultViewController.swift */,
-				B205434521431C4400995F66 /* Main.storyboard */,
-				B205434821431C4600995F66 /* Assets.xcassets */,
-				B205434A21431C4600995F66 /* LaunchScreen.storyboard */,
-				B205434D21431C4600995F66 /* Info.plist */,
 			);
-			path = myQuestionnaire;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B296FC7A2149C77E0054829E /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B231EF0D2146DEBE00B9FB5C /* Question.swift in Sources */,
 				B205434421431C4400995F66 /* IntroductionViewController.swift in Sources */,
 				B205434221431C4400995F66 /* AppDelegate.swift in Sources */,
 				B20543542143274A00995F66 /* QuestionViewController.swift in Sources */,
